@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .animate-fade-in {
+    animation: fadeIn 1s ease-out forwards;
+  }
+  
+  .animate-slide-up {
+    animation: slideUp 0.8s ease-out forwards;
+  }
+  
+  .animate-slide-in-left {
+    animation: slideInLeft 0.8s ease-out forwards;
+  }
+  
+  .animate-slide-in-right {
+    animation: slideInRight 0.8s ease-out forwards;
+  }
+  
+  .animate-scale {
+    animation: scale 0.8s ease-out forwards;
+  }
+
+  /* Education Circle Progress */
+  .education-progress {
+    transition: stroke-dashoffset 1.5s ease-in-out;
+  }
+
+  .education-circle {
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+  }
+
+  /* Hamburger Menu Animations */
+  .hamburger-line {
+    @apply h-0.5 w-6 bg-gray-600 transition-all duration-300 ease-in-out;
+  }
+
+  .hamburger-active .hamburger-line:first-child {
+    @apply rotate-45 translate-y-[0.3rem];
+  }
+
+  .hamburger-active .hamburger-line:nth-child(2) {
+    @apply opacity-0;
+  }
+
+  .hamburger-active .hamburger-line:last-child {
+    @apply -rotate-45 -translate-y-[0.3rem];
+  }
+
+  .mobile-menu {
+    @apply fixed top-16 left-0 w-full bg-white/95 backdrop-blur-sm transform transition-all duration-300 ease-in-out;
+  }
+
+  .mobile-menu.hidden {
+    @apply -translate-y-full opacity-0;
+  }
+
+  .mobile-menu.visible {
+    @apply translate-y-0 opacity-100;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scale {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
