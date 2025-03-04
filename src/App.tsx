@@ -456,7 +456,7 @@ function App() {
       <section
         id="home"
         ref={(el) => (sections.current[0] = el)}
-        className="min-h-screen flex items-center justify-center opacity-0 -mt-35 sm:mt mt-20"
+        className="min-h-screen flex items-center justify-center opacity-0 -mt-35 sm:mt mt-10"
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -686,7 +686,7 @@ I am a dedicated and detail-oriented Full Stack Web Developer with strong skills
                       </div>
                       <span className="text-gray-500">{exp.period}</span>
                     </div>
-                    <div className="p-3 h-[150px] flex flex-col items-start justify-between">
+                    <div className="p-3 flex flex-col items-start justify-between sm:h-[150px]">
                       <p className="text-gray-600">{exp.description}</p>
                       <div className='w-full flex justify-center'>
                         <a
