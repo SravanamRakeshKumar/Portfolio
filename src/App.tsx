@@ -531,7 +531,7 @@ I am a dedicated and detail-oriented Full Stack Web Developer with strong skills
                 </div>
                 <div className="flex items-center space-x-2 hover:text-indigo-600 transition-colors cursor-pointer p-2 rounded-lg hover:bg-indigo-50">
                   <Code className="text-indigo-600" />
-                  <span>5 Years Experience</span>
+                  <span>2 Years Experience</span>
                 </div>
               </div>
               <a
