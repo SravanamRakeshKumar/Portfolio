@@ -8,7 +8,7 @@ import project3 from './assets/projects/Screenshot 2025-03-04 110227.png';
 import Certificate1 from './assets/certificates/WRIGHTTECHSOFTWARESOLUTIONS_OfferLetter.jpg';
 import Certificate2 from './assets/certificates/PANTECH.AI_Certificate.jpg';
 import Certificate3 from './assets/certificates/QUIZARO_Certificate.jpg';
-import Resume from './assets/rakesh_resume.pdf';
+import Resume from './assets/Rakesh_Resume.pdf';
 
 interface Project {
   id: number;
